@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    margin: 10px;
+    padding: 100px;
+    font-family: Georgia, serif;
+    
+}
+h1{
+    font-size: 26px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+h3{
+    color: #006EB6;
+    text-transform: uppercase;
+}
+i{
+    font-style: italic;
+}
+hr{
+    color: #006EB6;
+}
+img{
+    margin: 0 auto;
+    height: auto;
+    width: 150px;
+}
+p{
+    margin-bottom: 20px;
+   text-align: left;
+}
+ol {
+    list-style-position: inside;
+    margin-left: 0;
+    padding-left: 10px;
+    text-align: left;
+  }
