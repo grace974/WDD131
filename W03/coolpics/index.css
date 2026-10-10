@@ -26,13 +26,10 @@ section {
   }
 img{
     object-fit: cover;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;*/
     display: grid;
     place-items: center;
     min-height: 300px;
+    min-width: 300px;
 }
 nav a {
       padding: 20px;
@@ -70,19 +67,24 @@ footer {
 
     }
     nav a{
-        display: inline-block;
+        
         text-align: center;
     }
     nav{
-        display: flex;
+        
         justify-content: center;
         
 
     }
     
     .menu-btn{
-        display: none;
+        
     }
+}
+@media (max-width: 800px){
+  nav a{
+    display: none;
+  }
 }
   @media (min-width: 1200px){
     main{
@@ -97,6 +99,8 @@ footer {
     }
     nav{
         text-align: center;
+        display: inline-block;
+        
 
     }
 }
