@@ -1,0 +1,137 @@
+.visually-hidden {
+    position: absolute;
+    width: 1.5px;
+    height: 1.5px;
+    padding: 0;
+    margin: -1px;
+    border: 0;
+    overflow: hidden;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Georgia, serif;
+    color: #2a1919;
+    background-color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 18px;
+}
+.site-header {
+    text-align: center;
+    border-bottom: 2px solid #d6783d;
+    padding-bottom: 10px;
+    margin-bottom: 23px;
+}
+
+.site-header h1 {
+    color: #450619;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.site-header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 35px;
+    font-family: Arial, sans-serif;
+    font-size: 0.97rem;
+}
+
+.site-header nav a {
+    color: #b60006;
+    text-decoration: none;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus {
+    text-decoration: underline;
+}
+
+
+.main-content {
+    padding: 11px 0;
+}
+
+.book-review {
+    display: flex;
+    flex-direction: column;
+}
+
+.meta-section {
+    text-align: right;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.meta-section .date {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.meta-section .rating {
+    color: #d6783d;
+    letter-spacing: -2px;
+}
+
+.details-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.book-title {
+    color: #b31217;
+    font-size: 1.35rem;
+    margin-bottom: 15px;
+}
+
+.book-cover {
+    margin-bottom: 15px;
+}
+
+.book-cover img {
+    width: 170px;
+    height: auto;
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.book-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    max-width: 290px;
+}
+
+
+.site-footer {
+    border-top: 2px solid #d6783d;
+    margin-top: 45px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+    .book-review {
+        display: grid;
+        grid-template-columns: 160px 1fr;
+        gap: 20px;
+        
+    }
+    .meta-section {
+        text-align: left;
+        border-right: 2px solid #d6783d;
+        padding-right: 18px;
+        margin-bottom: 0;
+    }
+
+    .details-section {
+        grid-column: 2;
+    }
+}
