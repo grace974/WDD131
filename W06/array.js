@@ -57,7 +57,7 @@ coursesArrayOfObjects.forEach((course) => {
     //build out an html div with course contents
     let courseDiv = `
         <div>
-            <h2>${item.name}</h2>
+            <h2>${course.name}</h2>
             <p> Code: ${course.code}</p>
             <p> Credits: ${course.credits}</p>
             <p> Instructor: ${course.instructor}</p>
