@@ -61,6 +61,13 @@ body {
     display: flex;
     flex-direction: column;
 }
+.books {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #d6783d;
+}
 
 .meta-section {
     text-align: right;
@@ -118,11 +125,14 @@ body {
     font-size: 0.9rem;
 }
 @media (min-width: 768px) {
-    .book-review {
+    .books {
         display: grid;
         grid-template-columns: 160px 1fr;
         gap: 20px;
-        
+    }
+    
+    .details-section {
+        grid-column: 2;
     }
     .meta-section {
         text-align: left;
