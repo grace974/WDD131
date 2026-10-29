@@ -1,0 +1,11 @@
+body{
+    text-align: center;
+    background-color: beige;
+    
+}
+label{
+    color: blue;
+}
+input{
+    border: 5px solid pink;
+}
