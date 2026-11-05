@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 50px;
+}
+
+#gameboard {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+#rollButton {
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    padding: 12px 24px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0 3px black;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+#rollButton:active {
+    transform: translateY(4px);
+    box-shadow: 0 1px black;
+}
+
+input[type="checkbox"] {
+    accent-color: black;
+}
